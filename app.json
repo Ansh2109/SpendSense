@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "SpendSense",
+    "slug": "spendsense",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "spendsense",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "SpendSense uses Face ID to securely unlock your expense tracker.",
+        "NSUserNotificationsUsageDescription": "SpendSense uses notifications for optional daily expense and task reminders.",
+        "NSCameraUsageDescription": "SpendSense may use the camera for bill and receipt scanning."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#10B981",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.ansh_21.spendsense"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-notifications",
+      "expo-sharing",
+      "expo-font"
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "44c143b5-095c-4852-9766-86b6b4abf8f7"
+      }
+    },
+    "owner": "ansh_21"
+  }
+}
